@@ -1,0 +1,21 @@
+{% extends 'styles.html' %}
+{% block block1 %}
+<form method=POST action=''>
+{% csrf_token %}
+<table align="center">
+<tr><td>
+Username: <input type=text name='username' placeholder='username' required/>
+</td>
+</tr>
+<tr>
+    <td>
+Password: <input type=password name='password' placeholder='password' required/>
+    </td>
+</tr>
+<tr>
+    <td>
+<input type=submit value="Login"/>
+    </td>
+</tr>
+</form>
+{% endblock %}

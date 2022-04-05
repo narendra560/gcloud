@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            Sample page
+        </title>
+    </head>
+    <body>
+        
+            <label for="dropdown_list">Create a Question </label><br/><br/>
+            <textarea type="text" rows="5" cols="25"></textarea>
+            <div>
+                <tr>
+                    <br/><td>Option 1:<textarea type="text"  rows="1" cols="15"> </textarea><input type="radio" id="text"><br/><br/></td>
+                    <td>Option 2:<textarea type="text"  rows="1" cols="15"> </textarea><input type="radio" id="text"><br/><br/></td>
+                    <td>Option 3:<textarea type="text"  rows="1" cols="15"> </textarea><input type="radio" id="text"><br/><br/></td>
+                    <td>Option 4:<textarea type="text"  rows="1" cols="15"> </textarea><input type="radio" id="text"><br/><br/></td>
+                </tr>
+            </div>
+            <div>
+                <label for="text">Difficulty level</label>
+                <select type="text" id="text" >
+                    <option type="text">Easy</option>
+                    <option type="text">Medium</option>
+                    <option type="text">Hard</option>
+                </select>
+            </div>
+            <div>
+                <br/><label for="Correct score">Correct Score</label>
+                <input type="number" id="Correct Score">
+            </div>
+            <div>
+                <br/><label for="Wrong_Score">Wrong Score</label>
+                <input type="number" id="'Wrong_Score">
+            </div>
+        <div>  
+            <form name="tags" action="tags.html" method="post">
+            <br/><label for="dropdown_list">Tags (Select tags from the suggestions dropdown)</label>
+            <button type="text" action="tags.html">See list of tags</button><br/>
+            <input list="courses" id="dropdown_list">
+            <datalist id="courses">
+                <option value="C">
+                <option value="Python">
+                <option value="Java">
+            </datalist><br/><br/></form>
+        </div>  
+        </form>
+        <div>
+        <form name="MCQS Creation" action="hello.html" method="post">
+            <br/><br/><button type="Submit">Submit</button>
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MCQS
+        </title>
+    </head>
+    <body>
+        <h1 align="center">
+             MCQ Test1
+        </h1>
+        <br/>
+        <br/>
+
+        {% for mcq in mcqs %}
+        <form id="mcqtest" action="/submit" method="post">
+            {% csrf_token %}
+            <table align="center" style="color: green;">
+
+                <tr>
+                    <td><h2>{{mcq.Question}}</h2> </td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="radio" id="op1" name="answer" value="1">
+                    <label for=" op1"> {{mcq.Option1}}</label>
+                </td>
+                <td>
+                    <input type="radio" id="op2" name="answer" value="2">
+                    <label for="op2">{{mcq.Option2}}</label>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="radio" id="op3" name="answer" value="3">
+                    <label for="op3">{{mcq.Option3}}</label>
+                </td>
+                <td>
+                    <input type="radio" id="op4" name="answer" value="4">
+                    <label for="op4">{{mcq.Option4}}</label>
+                </td>
+                </tr>
+            </table>
+        </form>
+        <br/>
+        <br/>
+        {% endfor %}
+        <form align="center">
+            <input type="submit" value="submit" style="color: blue;" >
+        </form>
+    </body>
+</html>
